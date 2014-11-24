@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TOY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/toy.min.css">
+    <script src="/javascripts/lib/jquery.min.js"></script>
+    <script src="/javascripts/lib/uisearch.js"></script>
+    <script src="/javascripts/lib/bootstrap.min.js"></script>
+    <script src="/javascripts/lib/handlebars-v2.0.0.js"></script>
+    <script src="/javascripts/toy.js"></script>
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="m-navigation">
+        <div class="row">
+          <div class="logo col-sm-12 col-md-5 pull-left"><img src="../images/icons/logo.png"></div>
+          <div class="user-navigation col-md-7 col-sm-12 pull-right">
+            <ul class="desktop font-9px-normal pull-right">
+              <li class="account"><a href="#">Account</a></li>
+              <li class="wishlist"><a href="#">Wishlist</a></li>
+              <li class="login"><a href="#">Login</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search">
+                <form>
+                  <div class="form-group">
+                    <input type="text" placeholder="Search entire store here...">
+                  </div>
+                </form>
+              </li>
+            </ul>
+            <ul class="mobile">
+              <li class="button">
+                <div id="menu-btn"></div>
+              </li>
+              <li class="account"><a href="#">Account</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search"></li>
+            </ul>
+            <div class="searchbox">
+              <form>
+                <input placeholder="Search entire store here..." type="text" class="input-search">
+                <input type="submit" value="Search" class="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="main-navigation">
+            <div class="close"><img src="../images/icons/btn-close.png"></div>
+            <ul class="list-inline">
+              <li class="current"><a href="/landing">Home</a></li>
+              <li><a href="/our-story">Our Story</a></li>
+              <li><a href="/how-it-works">How It Works</a></li>
+              <li><a href="/online-store">Gift Wizard</a></li>
+              <li><a href="">Spice It Up</a></li>
+              <li><a href="">Gift Calendar Manager</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <style>
+        h4 {
+          margin-top: 25px;
+        }
+        .row {
+          margin-bottom: 20px;
+        }
+        .row .row {
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+        [class*="col-"] {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-color: #eee;
+          background-color: rgba(86,61,124,.15);
+          border: 1px solid #ddd;
+          border: 1px solid rgba(86,61,124,.2);
+        }
+        
+        hr {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+        
+        
+      </style>
+      <div class="container">
+        <div class="page-header">
+          <h1>Bootstrap test page</h1>
+          <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+        </div>
+        <h3>Tooltips</h3>
+        <button type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left" class="btn btn-default">Tooltip on left</button>
+        <button type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="btn btn-default">Tooltip on top</button>
+        <button type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" class="btn btn-default">Tooltip on bottom</button>
+        <button type="button" data-toggle="tooltip" data-placement="right" title="Tooltip on right" class="btn btn-default">Tooltip on right</button>
+        <script>
+          $('button.btn.btn-default').tooltip();
+          
+        </script>
+        <h3>Three equal columns</h3>
+        <p>Get three equal-width columns<strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <h3>Three unequal columns</h3>
+        <p>Get three columns<strong>starting at desktops and scaling to large desktops</strong>of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+        <div class="row">
+          <div class="col-md-3">.col-md-3</div>
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-3">.col-md-3</div>
+        </div>
+        <h3>Two columns</h3>
+        <p>Get two columns<strong>starting at desktops and scaling to large desktops</strong>.</p>
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <h3>Full width, single column</h3>
+        <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+        <hr>
+        <h3>Two columns with two nested columns</h3>
+        <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns<strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+        <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+        <div class="row">
+          <div class="col-md-8">.col-md-8
+            <div class="row">
+              <div class="col-md-6">.col-md-6</div>
+              <div class="col-md-6">.col-md-6</div>
+            </div>
+          </div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <hr>
+        <h3>Mixed: mobile and desktop</h3>
+        <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+        <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+        <div class="row">
+          <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">.col-xs-6</div>
+          <div class="col-xs-6">.col-xs-6</div>
+        </div>
+        <hr>
+        <h3>Mixed: mobile, tablet, and desktop</h3>
+        <p></p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
+          <div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+        <hr>
+        <h3>Column clearing</h3>
+        <p><a href="http://getbootstrap.com/css/#grid-responsive-resets">Clear floats</a>at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3<br>Resize your viewport or check it out on your phone for an example.</div>
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+          <!-- Add the extra clearfix for only the required viewport-->
+          <div class="clearfix visible-xs"></div>
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+          <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        </div>
+        <hr>
+        <h3>Offset, push, and pull resets</h3>
+        <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+        <div class="row">
+          <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+          <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+          <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+        </div>
+      </div>
+    </div>
+    <div class="m-footer">
+      <footer>
+        <container>
+          <div class="footer-logo"><img src="/images/icons/logo-footer.png">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <h2>Navigate</h2>
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Gift Wizard </a></li>
+              <li><a href="#">Product Store</a></li>
+              <li><a href="#">Spice It Up</a></li>
+              <li><a href="#">Gift Calendar Manager</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h2>Follow Us</h2>
+            <ul>
+              <li class="fb"><a href="#">Facebook
+                  <div class="icon"></div></a></li>
+              <li class="tw"><a href="#">Twitter
+                  <div class="icon"></div></a></li>
+              <li class="yt"><a href="#">Youtube
+                  <div class="icon"></div></a></li>
+            </ul>
+          </div>
+        </container>
+      </footer>
+      <div class="terms">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+@media (min-width: @screen-sm-min) and (max-width: 991px){
+  .landing-page {
+    .hero {
+      max-height: 744px;
+      height: auto;
+      h1 {
+        width: 402px;
+        margin-top: 58px;
+        margin-bottom: 60px;
+      }
+    }
+    .infographics-mobile {
+      height: 850px;
+      background: @colorYellow;
+      .container {
+        h2 {
+          .font-34px-light; 
+          width: 470px;
+          margin: 68px auto;
+          line-height: 54px;
+          text-align: center;
+          &.h2-entry {.block;}
+          &.h2-lost {.nodisplay;}
+        }
+        ol {
+          width: 520px;
+          margin:96px auto 10px;
+          li {
+            width: 550px;
+            margin-bottom: 34px;
+            display: block;
+            float: left;
+            .gift {
+              .icon {
+                background-position: -100px -4px;
+              }
+            }
+            .lost {
+              .icon {
+                background-position: -100px -104px;
+
+              }
+            }
+            .deliver {
+              .icon {
+                background-position: 0px -106px;
+              }
+            }
+            .see {
+              .icon {
+                background-position: 0px -5px;
+              }
+            }
+            a {
+              .font-21px-semibold;
+              .icon {
+                .icon-100px;
+                background: @colorGray url('../images/icons/ico-infographics.png')no-repeat;
+                background-size: 200px;
+                margin: -30px  48px 20px 20px;
+                float: left;
+              }
+            }
+          }
+          &:after {
+            content: '';
+            display: table;
+            clear: both;
+          }
+        }
+        .wrapper {
+          width: 280px;
+          position: absolute;
+          margin-top: 556px;
+          margin-left: 80px;
+          h3 {
+            background: url('../images/icons/arrow-right.png')no-repeat right;
+            font-weight: 600;
+            font-size: 28px;
+            padding: 12px;
+            text-transform: uppercase;
+            a {
+              color: @colorGray;
+              display: block;
+              text-decoration: underline;
+              &:hover {
+                color: @colorOrange;
+                text-decoration: none;
+              }
+            }
+          }
+          &:after {
+            content:'';
+            display: table;
+            clear: both;
+          }     
+        }
+      }
+    }
+  }
+  // landing page end
+  
+  .section-block {
+    height: 1239px;
+    .get-started {
+      h1 {
+        .font-42px-light;
+        margin-top: 98px;
+        margin-bottom: 50px;
+      }
+      p {
+        width: 62%;
+      }
+      > div {
+        h2 {
+          text-decoration: underline;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &.gift {
+          .icon {
+            background-position: 4px 4px;
+          }
+        }
+        &.spice {
+          .icon {
+            background-position: -96px 6px;
+          }
+        }
+        &.calendar {
+          margin-top: 62px;
+          .icon {
+            background-position: 2px -98px;
+          }
+        }
+        .icon {
+          .icon-108px;
+        }
+      }
+    }
+    .love-share {
+      h1 {
+        .font-42px-light;
+        margin-top: 294px;
+      }      
+      p {
+        margin-top: -334px;
+        width: 46%;
+      }
+      .social-media {
+        .center;
+        width: 130px;
+      }
+    }
+  }
+  .section-carousel {
+    .carousel-control {
+      color: @colorOrange;
+      &.right {
+        margin-left: 580px !important;
+      }
+    }
+  }
+}

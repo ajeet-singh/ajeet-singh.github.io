@@ -1,0 +1,121 @@
+@media (min-width: 0px) and (max-width: 479px){
+  .page-header {
+    height: 130px;
+    .m-navigation {
+      padding-top: 10px;
+      width: 100%;
+      .logo {
+        float: none !important;
+        text-align: center;
+        img {
+          width: 260px;
+        }
+      }
+      .user-navigation {
+        width: 100%;
+        height: 40px;
+        margin-top: 4px;
+        background: @colorOrange;
+        float: left !important;
+        
+        ul.desktop {
+          .nodisplay;
+        }
+        
+        ul.mobile {
+          .block;
+          width: 330px;
+          margin: 0 auto;
+          padding-left: 24px;
+          li {
+            height: 32px;
+            width: 38px;
+            margin-top: 5px;
+            background: url(../images/icons/ico-top-navigation.png)no-repeat;
+            background-size: 132px;
+            text-indent: -999999px;
+            float: left;
+            &.button {
+              #menu-btn {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+              }
+            }
+            &.account {
+              margin-left: 61px;
+              background-position: -30px 0;
+            }
+            &.cart {
+              margin: 5px 14px 0;
+              background-position: -64px 0;
+            }
+            &.search {
+              background-position: -98px 0;
+            }
+            a {
+              .block;
+              height: 40px;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      nav {
+        position: relative;
+        left: -150px;
+        .nav-background;
+        width: 150px;
+        height: 334px;
+        margin-top: 0;
+        top: 130px;
+        .transition(~'left 500ms linear');
+        &.open {
+          left: 0px;
+        }
+        .close{
+          .block;
+          float: right;
+          margin-right: 12px;
+          margin-top: 10px;
+          cursor: pointer;
+          img { 
+            width: 12px;
+          }
+        }
+        ul {
+          margin-top: 6px;
+          li {
+            .block;
+            width: 80%;
+            margin-left: 10%;
+            padding-left: 14px;
+            border-bottom: 1px solid @colorYellow;
+            font-size: 12px;
+            text-align: left;
+            text-transform: uppercase;
+            float: none;
+            a {
+              color: @colorYellow;
+              padding: 17px 0;
+              text-decoration: none;
+            }
+            &:first-child {
+              width: 120px;
+            }
+            &.current,
+            &:hover {
+              background: none;
+            }
+            &:last-child {
+              width: 120px;
+              line-height: 18px;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

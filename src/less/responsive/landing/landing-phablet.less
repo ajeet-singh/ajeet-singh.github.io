@@ -1,0 +1,209 @@
+@media (min-width: @screen-xs-min) and (max-width: 767px){
+  .landing-page {
+    .hero {
+      max-height: 744px;
+      height: auto;
+      h1 {
+        width: 402px;
+      }
+    }
+    .infographics-mobile {
+      height: 850px;
+      background: @colorYellow;
+      .container {
+        h2 {
+          .font-34px-light;
+          font-size: 40px; 
+          width: 470px;
+          margin: 68px auto;
+          line-height: 54px;
+          text-align: center;
+          &.h2-entry {.block;}
+          &.h2-lost {.nodisplay;}
+        }
+        ol {
+          width: 480px;
+          margin:60px auto 10px;
+          li {
+            width: 460px;
+            margin-bottom: 34px;
+            display: block;
+            float: left;
+            .gift {
+              .icon {
+                background-position: -100px -4px;
+              }
+            }
+            .lost {
+              .icon {
+                background-position: -100px -104px;
+              }
+            }
+            .deliver {
+              .icon {
+                background-position: 0px -106px;
+              }
+            }
+            .see {
+              .icon {
+                background-position: 0px -5px;
+              }
+            }
+            a {
+              .font-21px-semibold;
+              .icon {
+                .icon-100px;
+                background: @colorGray url('../images/icons/ico-infographics.png')no-repeat;
+                background-size: 200px;
+                margin: -30px  48px 20px 20px;
+                float: left;
+              }
+            }
+          }
+          &:after {
+            content: '';
+            display: table;
+            clear: both;
+          }
+        }
+        .wrapper {
+          width: 280px;
+          position: absolute;
+          margin-top: 556px;
+          margin-left: 80px;
+          h3 {
+            background: url('../images/icons/arrow-right.png')no-repeat right;
+            font-weight: 600;
+            font-size: 28px;
+            padding: 12px;
+            text-transform: uppercase;
+            a {
+              color: @colorGray;
+              display: block;
+              text-decoration: underline;
+              &:hover {
+                color: @colorOrange;
+                text-decoration: none;
+              }
+            }
+          }
+          &:after {
+            content:'';
+            display: table;
+            clear: both;
+          }     
+        }
+      }
+    }
+  }
+  // landing page end
+  
+  .section-block {
+    height: 1000px;
+    .get-started {
+      h1 {
+        .font-26px-light;
+        color: @colorYellow;
+        margin-top: 30px;
+        margin-bottom: 25px;
+      }
+      p {
+        width: 50%;
+        font-size: 16px;
+      }
+      > div {
+        h2 {
+          .font-16px-normal;
+          color: @colorYellow;
+          text-decoration: underline;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &.gift {
+          .icon {
+            background-position: -6px -6px;
+          }
+        }
+        &.spice {
+          .icon {
+            background-position: -82px -4px;
+          }
+        }
+        &.calendar {
+          .icon {
+            background-position: -6px -82px;
+          }
+        }
+        .icon {
+          .icon-64px;
+          background: @colorOrange url('../images/icons/ico-get-started.png')no-repeat;
+          background-size: 150px;
+        }
+      }
+    }
+    .love-share {
+      h1 {
+        .font-26px-light;
+        margin-top: 290px;
+      }      
+      p {
+        margin-top: -334px;
+        width: 46%;
+      }
+      .social-media {
+        .center;
+        width: 100px;
+        .icon {
+          .icon-50px;
+          background: @colorOrange url('../images/icons/ico-social-media.png')no-repeat;
+          background-size: 120px;
+          &.fb {
+            background-position: 4px 4px;
+            margin-left: -30px;
+          }
+          &.tw {
+            background-position: -35px 4px;
+          }
+        }
+      }
+    }
+  }
+  .section-carousel {
+    .carousel-control {
+      color: @colorOrange;
+      &.right {
+        margin-left: 480px !important;
+      }
+    }
+  }  
+  .section-mailing {
+    .icon {
+      .center;
+      .icon-64px;
+      background: @colorOrange url('../images/icons/ico-social-media.png')no-repeat;
+      background-size: 180px;
+      margin-top: 75px;
+    }
+    h2 {
+      font-size: 36px;
+      color: @colorYellow;
+      margin-top: 20px;
+      margin-bottom: 32px;
+    }
+    form {
+      input {
+        width: 320px;
+        padding: 15px;
+        background: rgba(225, 225, 225, 0.5) url('../images/icons/arrow-right.png')no-repeat;
+        background-size: 32px;
+        background-position: 272px 8px;
+        border: none;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 300;
+        color: @colorYellow;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.m-footer {
+  footer {
+    .footer-logo {
+      .left;
+      width: 310px;
+      img {
+        margin-top: 37px;
+        margin-bottom: 20px;
+      }
+      li {
+        float: left;
+        padding: 0 10px;
+        &:first-child {
+          border-right: 1px solid @colorGray;
+        }
+        a {
+          color: @colorOrange;
+          text-decoration: none;
+        }
+      }
+    }
+    .footer-nav {
+      .left;
+      margin-top: 50px;
+      margin-left: 420px;
+      width: 410px;
+      ul {
+        li {
+          width: 200px;
+          float: left;
+          padding: 10px 0;
+          text-transform: uppercase;
+          a {
+            color: @colorOrange;
+            text-decoration: none;
+          }
+          &:first-child {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .footer-social {
+      .left;
+      margin-top: 50px;
+      width: 190px;
+      h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      ul {
+        li {
+          float: left;
+          text-indent: -999999px;
+          .icon {
+            .center;
+            .icon-50px;
+            background: @colorOrange url('../images/icons/ico-social-media.png')no-repeat;
+            background-size: 120px;
+          }
+          &.fb {
+            .icon {
+              background-position: 5px 5px;
+            }
+          }
+          &.tw {
+            .icon {
+              background-position: -34px 5px;
+            }
+          }
+          &.yt {
+            .icon {
+              background-position: -75px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

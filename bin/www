@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var debug = require('debug')('toy');
+var app = require('../app');
+var os = require("os");
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Server running on http://' + os.hostname() + ':' + server.address().port + ', http://' + server.address().address + ':' + server.address().port);
+});

@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title TOY
+  body
+    - if (env == 'dev')
+      h1 TOY static html development site
+
+      h2 Dynamic pages
+      ul
+        li
+          a(href='/bootstrap') Bootstrap test page
+        li
+          a(href='/styles') Font test page
+        li
+          a(href='/landing') Landing
+        li
+          a(href='/online-store') Online store
+        li
+          a(href='/our-story') Our story
+        li
+          a(href='/how-it-works') How it works
+
+      h2 Static pages
+
+      h3 Compiled test pages
+      ul
+        li
+          a(href='/html/styles.html') Font test page
+        li
+          a(href='/html/bootstrap.html') Bootstrap test page
+      h3 Deliverables
+      h2 Group 1
+      ul
+        li
+          a(href='/html/landing.html') Landing
+        li
+          a(href='/html/online-store.html') Online store
+        li
+          a(href='/html/our-story.html') Our story
+        li
+          a(href='/html/how-it-works.html') How it works
+    - else
+      h1 TOY static html staging site
+
+      h3 Deliverables
+      h2 Group 1
+      ul
+        li
+          a(href='/html/landing.html') Landing
+        li
+          a(href='/html/online-store.html') Online store
+        li
+          a(href='/html/our-story.html') Our story
+        li
+          a(href='/html/how-it-works.html') How it works

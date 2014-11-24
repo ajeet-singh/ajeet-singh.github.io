@@ -1,0 +1,76 @@
+.section-carousel {
+  height: 810px;
+  background: @colorYellow;
+    header {
+      height: 160px;
+      h1 {
+        .font-52px-light;
+        margin: 64px auto 5px;
+        text-align: center;
+        color: @colorGray;
+      }
+      .wrapper {
+        width: 130px;
+        padding: 27px 0;
+        margin: auto;
+        background: url('../images/icons/arrow-right.png')no-repeat right;
+        background-size: 30px;
+        h3 {
+          font-weight: 600;
+          font-size: 18px;
+          text-transform: uppercase;
+          a {
+            color: @colorGray;
+            display: block;
+            text-decoration: underline;
+            &:hover {
+              color: @colorOrange;
+              text-decoration: none;
+            }
+          }
+        }     
+      }
+    }
+  .carousel {
+    .img-wrap {
+      height: 375px;
+    }
+    h2 {
+      .font-16px-normal;
+      color: @colorGray;
+      line-height: 28px;
+      strong {
+        margin-top: 18px;
+        color: @colorOrange;
+        font-weight: 700;
+      }
+    }
+    .carousel-indicators {
+      bottom: -60px;
+      li {
+        border: 1px solid @colorOrange;
+        &.active {
+          background-color: @colorOrange;
+        }
+      }
+    }
+    .carousel-inner {
+      height:430px;
+    }
+    .carousel-control {
+      color: @colorOrange;
+      &.right {
+        position: relative;
+        margin-top: -200px;
+        span {
+          background: url('../images/icons/arrow-r.png')no-repeat;
+        }
+      }
+      &.left {
+        span {
+          background: url('../images/icons/arrow-l.png')no-repeat;
+        }
+      }
+    }
+  }
+}

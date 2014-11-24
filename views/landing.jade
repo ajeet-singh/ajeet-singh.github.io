@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  .landing-page
+    .hero
+      .container
+        .row.title 
+          h1 
+            strong Experience 
+            | the joy of gifting 
+            strong happiness
+      .row
+        img(src='/images/landing/hero-img-1.jpg')
+    .infographics
+      .container
+        .row
+          .info-header
+            h2.h2-entry.block Creating Memories for Every Occasion
+              .wrapper
+                h3
+                  a.read-more(href="#") Read More
+            h2.h2-lost.nodisplay The Right Gift For the Right Person  
+          ol
+            li
+              .gift
+                a(href='') 
+                  .icon
+                  h3 1. Ready to Gift Happiness?
+            li
+              .lost 
+                a(href='') 
+                  .icon
+                  h3 2. Feeling Lost?
+            li
+              .deliver 
+                a(href='') 
+                  .icon
+                  h3 3. Deliver Happiness
+            li
+              .see 
+                a(href='') 
+                  .icon
+                  h3 4. See their Joy      
+  include ./includes/get-started-promotion.jade
+  include ./includes/get-inspired-promotion.jade
+  include ./includes/join-mailinglist.jade
+
+               
+
+        
+
+          

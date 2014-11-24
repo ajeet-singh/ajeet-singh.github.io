@@ -1,0 +1,62 @@
+.section-carousel
+  .container
+    header 
+      h1 Get Inspired
+      .wrapper
+        h3
+          a.read-more(href="#") See More
+
+    #carousel-id.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li(data-target='#carousel-id', data-slide-to='0')
+        li(data-target='#carousel-id', data-slide-to='1')
+        li(data-target='#carousel-id', data-slide-to='2')
+        li(data-target='#carousel-id', data-slide-to='3')
+        li.active(data-target='#carousel-id', data-slide-to='4')
+      .carousel-inner
+        .item
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-1.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00 
+        .item
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-2.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00 
+        .item
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-1.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00 
+        .item    
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-2.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00 
+        .item
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-1.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00
+        .item.active    
+          .col-md-6.text-center
+            .img-wrap
+              img(src='/images/landing/product-2.png')
+            h2 First product name here
+            h2 
+              strong INR 000.00  
+      a.left.carousel-control(href='#carousel-id', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control(href='#carousel-id', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right

@@ -1,0 +1,41 @@
+@media (min-width: 1281px) {
+  
+  // header
+  .page-header {
+    .m-navigation {
+      width: 1345px !important;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .page-header {
+    .m-navigation {
+      width: 992px;
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+      .user-navigation {
+        ul {
+          margin-right: 15px;
+          padding-right: 30px;
+        }
+      }
+      nav {
+        width: 992px;
+        margin: 32px auto;
+        ul {
+          li {
+            width: 149px;
+            font-size: 14px;
+            &:last-child {
+              width: 210px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

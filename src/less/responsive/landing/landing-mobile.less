@@ -1,0 +1,253 @@
+@media (min-width: 0) and (max-width: 479px){
+  .landing-page {
+    .hero {
+      max-height: 744px;
+      height: auto;
+      h1 {
+        .font-26px-light;
+        line-height: 39px;
+        margin: 19px auto 23px;
+        width: 280px;
+        strong {
+          .font-26px-semibold;
+        }
+      }
+      img {
+        min-height: 134px;
+      }
+    }
+    .infographics-mobile {
+      height: 435px;
+      background: @colorYellow;
+      .container {
+        h2 {
+          .font-19px-light;
+          width: 280px;
+          margin: 21px auto;
+          text-align: center;
+          &.h2-entry {.block;}
+          &.h2-lost {.nodisplay;}
+        }
+        ol {
+          width: 300px;
+          margin:60px auto 10px;
+          li {
+            width: 280px;
+            margin-top: -8px;
+            margin-bottom: 10px;
+            display: block;
+            float: left;
+            .gift {
+              .icon {
+                background-position: -66px -8px;
+              }
+            }
+            .lost {
+              .icon {
+                background-position: -66px -68px;
+
+              }
+            }
+            .deliver {
+              .icon {
+                background-position: -5px -68px;
+              }
+            }
+            .see {
+              .icon {
+                background-position: -5px -8px;
+              }
+            }
+            a {
+              .font-11px-semibold;
+              .icon {
+                .icon-50px;
+                background: @colorGray url('../images/icons/ico-infographics.png')no-repeat;
+                background-size: 120px;
+                margin: -16px  28px 24px 20px;
+                float: left;
+              }
+            }
+          }
+          &:after {
+            content: '';
+            display: table;
+            clear: both;
+          }
+        }
+        .wrapper {
+          width: 160px;
+          position: absolute;
+          margin-top: 280px;
+          margin-left: 30px;
+          h3 {
+            .font-11px-semibold;
+            background: url('../images/icons/arrow-right.png')no-repeat right;
+            background-size: 32px;
+            padding: 12px;
+            text-transform: uppercase;
+            a {
+              color: @colorGray;
+              display: block;
+              text-decoration: underline;
+              &:hover {
+                color: @colorOrange;
+                text-decoration: none;
+              }
+            }
+          }
+          &:after {
+            content:'';
+            display: table;
+            clear: both;
+          }     
+        }
+      }
+    }
+  }
+  // landing page end
+  .section-block {
+    height: 830px;
+    .get-started {
+      h1 {
+        .font-23px-light;
+        color: @colorYellow;
+        margin-top: 22px;
+        margin-bottom: 25px;
+      }
+      p {
+        width: 80%;
+        font-size: 16px;
+      }
+      > div {
+        h2 {
+          .font-16px-normal;
+          color: @colorYellow;
+          margin-top: -10px;
+          text-decoration: underline;
+        }
+        p {
+          margin-top: -5px;
+          line-height: 18px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        &.gift {
+          margin-bottom: 47px;
+          .icon {
+            background-position: -6px -6px;
+          }
+        }
+        &.spice {
+          margin-bottom: 51px;
+          .icon {
+            background-position: -82px -4px;
+          }
+        }
+        &.calendar {
+          margin-bottom: 51px;
+          .icon {
+            background-position: -6px -82px;
+          }
+        }
+        .icon {
+          .icon-64px;
+          background: @colorOrange url('../images/icons/ico-get-started.png')no-repeat;
+          background-size: 150px;
+        }
+      }
+    }
+    .love-share {
+      h1 {
+        .font-23px-light;
+        margin-top: -6px;
+        margin-bottom: 32px;
+      }      
+      p {
+        width: 90%;
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .social-media {
+        .center;
+        width: 70px;
+        .icon {
+          .icon-50px;
+          background: @colorOrange url('../images/icons/ico-social-media.png')no-repeat;
+          background-size: 120px;
+          &.fb {
+            background-position: 4px 4px;
+            margin-left: -30px;
+          }
+          &.tw {
+            background-position: -35px 4px;
+          }
+        }
+      }
+    }
+  }
+  .section-carousel {
+    height: 495px;
+    overflow: hidden;
+    header {
+      height: 100px;
+      h1 {
+        .font-21px-light;
+        margin-top: 30px;
+      }
+      .wrapper {
+        padding: 14px 0;
+      }
+    }
+    .carousel-control {
+      color: @colorOrange;
+      &.right {
+        margin-left: 480px !important;
+      }
+    }
+    .carousel {
+      .carousel-inner {
+        height: 302px;
+        .img-wrap {
+          height: 250px;
+          img {
+            width: 141px;
+          }
+        }
+      }
+      .carousel-indicators {
+        bottom: -30px;
+      }
+    }
+  }
+  .section-mailing {
+    height: 200px;
+    .mailing-wrap {
+      width: 280px;
+      .icon {
+        .icon-64px;
+        background: @colorOrange url('../images/icons/ico-get-started.png')no-repeat;
+        background-size: 150px;
+        background-position: -80px -80px;
+        margin-top: 20px;
+      }
+      h2 {
+        font-size: 26px;
+        color: @colorYellow;
+        margin-top: 20px;
+        margin-bottom: 12px;
+      }
+      form {
+        input {
+          width: 200px;
+          height: 31px;
+          background-position: 172px 6px;
+          background-size: 20px;
+          font-size: 15px;
+
+        }
+      }
+    }
+  }
+}

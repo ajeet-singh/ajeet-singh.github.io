@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TOY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/toy.min.css">
+    <script src="/javascripts/lib/jquery.min.js"></script>
+    <script src="/javascripts/lib/uisearch.js"></script>
+    <script src="/javascripts/lib/bootstrap.min.js"></script>
+    <script src="/javascripts/lib/handlebars-v2.0.0.js"></script>
+    <script src="/javascripts/toy.js"></script>
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="m-navigation">
+        <div class="row">
+          <div class="logo col-sm-12 col-md-5 pull-left"><img src="../images/icons/logo.png"></div>
+          <div class="user-navigation col-md-7 col-sm-12 pull-right">
+            <ul class="desktop font-9px-normal pull-right">
+              <li class="account"><a href="#">Account</a></li>
+              <li class="wishlist"><a href="#">Wishlist</a></li>
+              <li class="login"><a href="#">Login</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search">
+                <form>
+                  <div class="form-group">
+                    <input type="text" placeholder="Search entire store here...">
+                  </div>
+                </form>
+              </li>
+            </ul>
+            <ul class="mobile">
+              <li class="button">
+                <div id="menu-btn"></div>
+              </li>
+              <li class="account"><a href="#">Account</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search"></li>
+            </ul>
+            <div class="searchbox">
+              <form>
+                <input placeholder="Search entire store here..." type="text" class="input-search">
+                <input type="submit" value="Search" class="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="main-navigation">
+            <div class="close"><img src="../images/icons/btn-close.png"></div>
+            <ul class="list-inline">
+              <li class="current"><a href="/landing">Home</a></li>
+              <li><a href="/our-story">Our Story</a></li>
+              <li><a href="/how-it-works">How It Works</a></li>
+              <li><a href="/online-store">Gift Wizard</a></li>
+              <li><a href="">Spice It Up</a></li>
+              <li><a href="">Gift Calendar Manager</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="section-how-it-works">
+        <div class="container">
+          <div class="row"> 
+            <h1>How It Works</h1>
+            <div class="video-wrapper"></div>
+            <h2>Find the perfect gift,<br><span class="violet">add an unforgetable moment.</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="section-block">
+        <div class="container">
+          <div class="row">
+            <div class="get-started">
+              <h1>GET STARTED</h1>
+              <div class="col-md-4 col-sm-6 gift">
+                <div class="icon"></div>
+                <h2>Gift Wizard</h2>
+                <p>We'll help you find the perfect gift.</p>
+              </div>
+              <div class="col-md-4 col-sm-6 spice">
+                <div class="icon"></div>
+                <h2>Spice It Ip</h2>
+                <p>Spice up your gift with a memorable experience</p>
+              </div>
+              <div class="col-md-4 col-sm-12 calendar">
+                <div class="icon"></div>
+                <h2>Gift Calendar Manager</h2>
+                <p>We’ll help you remember all the important occasions</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="love-share"> 
+              <h1>SHARE YOUR LOVE</h1>
+              <P>Tell someone you're thinking of them to win them a free gift</P>
+              <div class="social-media">
+                <div class="col-xs-6"><a href="#">
+                    <div class="icon fb"></div></a></div>
+                <div class="col-xs-6"><a href="#">
+                    <div class="icon tw"></div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-carousel">
+        <div class="container">
+          <header>
+            <h1>Get Inspired</h1>
+            <div class="wrapper">
+              <h3><a href="#" class="read-more">See More</a></h3>
+            </div>
+          </header>
+          <div id="carousel-id" data-ride="carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-id" data-slide-to="0"></li>
+              <li data-target="#carousel-id" data-slide-to="1"></li>
+              <li data-target="#carousel-id" data-slide-to="2"></li>
+              <li data-target="#carousel-id" data-slide-to="3"></li>
+              <li data-target="#carousel-id" data-slide-to="4" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item">
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-1.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00 </strong></h2>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-2.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00 </strong></h2>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-1.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00 </strong></h2>
+                </div>
+              </div>
+              <div class="item">   
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-2.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00 </strong></h2>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-1.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00</strong></h2>
+                </div>
+              </div>
+              <div class="item active">   
+                <div class="col-md-6 text-center">
+                  <div class="img-wrap"><img src="/images/landing/product-2.png"></div>
+                  <h2>First product name here</h2>
+                  <h2><strong>INR 000.00  </strong></h2>
+                </div>
+              </div>
+            </div><a href="#carousel-id" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a><a href="#carousel-id" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="section-mailing">
+        <div class="container">
+          <div class="mailing-wrap">
+            <div class="icon"></div>
+            <h2>Join our mailing list</h2>
+            <form>
+              <input type="text" value="Your e-mail address">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="m-footer">
+      <footer>
+        <container>
+          <div class="footer-logo"><img src="/images/icons/logo-footer.png">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <h2>Navigate</h2>
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Gift Wizard </a></li>
+              <li><a href="#">Product Store</a></li>
+              <li><a href="#">Spice It Up</a></li>
+              <li><a href="#">Gift Calendar Manager</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h2>Follow Us</h2>
+            <ul>
+              <li class="fb"><a href="#">Facebook
+                  <div class="icon"></div></a></li>
+              <li class="tw"><a href="#">Twitter
+                  <div class="icon"></div></a></li>
+              <li class="yt"><a href="#">Youtube
+                  <div class="icon"></div></a></li>
+            </ul>
+          </div>
+        </container>
+      </footer>
+      <div class="terms">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

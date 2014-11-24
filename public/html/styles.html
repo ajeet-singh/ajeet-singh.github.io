@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TOY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/toy.min.css">
+    <script src="/javascripts/lib/jquery.min.js"></script>
+    <script src="/javascripts/lib/uisearch.js"></script>
+    <script src="/javascripts/lib/bootstrap.min.js"></script>
+    <script src="/javascripts/lib/handlebars-v2.0.0.js"></script>
+    <script src="/javascripts/toy.js"></script>
+  </head>
+  <body>
+    <div class="page-header">
+      <div class="m-navigation">
+        <div class="row">
+          <div class="logo col-sm-12 col-md-5 pull-left"><img src="../images/icons/logo.png"></div>
+          <div class="user-navigation col-md-7 col-sm-12 pull-right">
+            <ul class="desktop font-9px-normal pull-right">
+              <li class="account"><a href="#">Account</a></li>
+              <li class="wishlist"><a href="#">Wishlist</a></li>
+              <li class="login"><a href="#">Login</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search">
+                <form>
+                  <div class="form-group">
+                    <input type="text" placeholder="Search entire store here...">
+                  </div>
+                </form>
+              </li>
+            </ul>
+            <ul class="mobile">
+              <li class="button">
+                <div id="menu-btn"></div>
+              </li>
+              <li class="account"><a href="#">Account</a></li>
+              <li class="cart"><a href="#">Cart</a></li>
+              <li class="search"></li>
+            </ul>
+            <div class="searchbox">
+              <form>
+                <input placeholder="Search entire store here..." type="text" class="input-search">
+                <input type="submit" value="Search" class="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="main-navigation">
+            <div class="close"><img src="../images/icons/btn-close.png"></div>
+            <ul class="list-inline">
+              <li class="current"><a href="/landing">Home</a></li>
+              <li><a href="/our-story">Our Story</a></li>
+              <li><a href="/how-it-works">How It Works</a></li>
+              <li><a href="/online-store">Gift Wizard</a></li>
+              <li><a href="">Spice It Up</a></li>
+              <li><a href="">Gift Calendar Manager</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 100; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Ultra-Light normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 100; font-style: italic; font-stretch: normal;">HelveticaNeue 50px Ultra-Light italic normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 200; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Thin normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 300; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Light normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: normal; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Regular normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: normal; font-style: normal; font-stretch: condensed;">HelveticaNeue 50px Regular normal condensed</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: normal; font-style: italic; font-stretch: normal;">HelveticaNeue 50px Regular italic normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 500; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Medium normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: 500; font-style: italic; font-stretch: normal;">HelveticaNeue 50px Medium italic normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: bold; font-style: normal; font-stretch: normal;">HelveticaNeue 50px Bold normal normal</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: bold; font-style: normal; font-stretch: condensed;">HelveticaNeue 50px Bold normal condensed</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 50px; font-weight: bold; font-style: italic; font-stretch: normal;">HelveticaNeue 50px Bold italic normal</div><br><br><br><br><br><br><br><br>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 82px; font-weight: 200; font-style: normal; font-stretch: normal;">Helvetica Neue Thin 82px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 66px; font-weight: 200; font-style: normal; font-stretch: normal;">Helvetica Neue Thin 66px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 48px; font-weight: 200; font-style: normal; font-stretch: normal;">Helvetica Neue Thin 48px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 32px; font-weight: 200; font-style: normal; font-stretch: normal;">Helvetica Neue Thin 32px</div><br><br>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 32px; font-weight: 300; font-style: normal; font-stretch: normal;">Helvetica Neue Light 32px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 26px; font-weight: 300; font-style: normal; font-stretch: normal;">Helvetica Neue Light 26px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 22px; font-weight: 300; font-style: normal; font-stretch: normal;">Helvetica Neue Light 22px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 18px; font-weight: 300; font-style: normal; font-stretch: normal;">Helvetica Neue Light 18px</div><br><br>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 24px; font-weight: normal; font-style: normal; font-stretch: normal;">Helvetica Neue Regular 24px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal;">Helvetica Neue Regular 16px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal;">Helvetica Neue Regular 14px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 13px; font-weight: normal; font-style: normal; font-stretch: normal;">Helvetica Neue Regular 13px</div><br><br>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 18px; font-weight: 500; font-style: normal; font-stretch: normal;">Helvetica Neue Medium 18px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 16px; font-weight: 500; font-style: normal; font-stretch: normal;">Helvetica Neue Medium 16px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 14px; font-weight: 500; font-style: normal; font-stretch: normal; text-transform: uppercase;">Helvetica Neue Medium 14px all caps</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 13px; font-weight: 500; font-style: normal; font-stretch: normal;">Helvetica Neue Medium 13px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 12px; font-weight: 500; font-style: normal; font-stretch: normal;">Helvetica Neue Medium 12px</div><br><br>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; text-transform: uppercase;">Helvetica Neue Bold 14px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 13px; font-weight: bold; font-style: normal; font-stretch: normal; text-transform: uppercase;">Helvetica Neue Bold 13px</div>
+      <div style="font-family: &quot;HelveticaNeue&quot;; font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; text-transform: uppercase;">Helvetica Neue Bold 12px</div><br><br>
+    </div>
+    <div class="m-footer">
+      <footer>
+        <container>
+          <div class="footer-logo"><img src="/images/icons/logo-footer.png">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>
+                <h2>Navigate</h2>
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">How It Works</a></li>
+              <li><a href="#">Gift Wizard </a></li>
+              <li><a href="#">Product Store</a></li>
+              <li><a href="#">Spice It Up</a></li>
+              <li><a href="#">Gift Calendar Manager</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h2>Follow Us</h2>
+            <ul>
+              <li class="fb"><a href="#">Facebook
+                  <div class="icon"></div></a></li>
+              <li class="tw"><a href="#">Twitter
+                  <div class="icon"></div></a></li>
+              <li class="yt"><a href="#">Youtube
+                  <div class="icon"></div></a></li>
+            </ul>
+          </div>
+        </container>
+      </footer>
+      <div class="terms">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

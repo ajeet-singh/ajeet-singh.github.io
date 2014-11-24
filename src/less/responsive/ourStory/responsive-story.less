@@ -1,0 +1,98 @@
+@media (min-width: @screen-sm-min) and (max-width: 991px){
+  .section-story {
+    background:  @colorYellow url('../images/ourStory-bg-tab.png')no-repeat;
+    h1 {
+      .font-46px-caslon;
+      .text-center;
+      margin-top: 174px;
+      margin-bottom: 84px;
+      color: @colorGray;
+    }
+    p{
+      .font-21px-regular;
+      .text-center;
+      .center;
+      width: 90%;
+      line-height: 38px;
+      color: @colorGray;
+      &.lead {
+        .font-23px-regular;
+        .center;
+        width: 100%;
+        margin-bottom: 72px;
+        color: @colorViolet;
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-xs-min) and (max-width: 767px){
+  .section-story {
+    min-height: 600px;
+    height: auto;
+    background:  @colorYellow url('../images/ourStory-bg-tab.png')no-repeat;
+    background-size: 160px;
+    h1 {
+      .font-23px-caslon;
+      .text-center;
+      margin-top: 79px;
+      margin-bottom: 26px;
+      color: @colorGray;
+    }
+    p{
+      .font-16px-normal;
+      .text-center;
+      .center;
+      width: 90%;
+      line-height: 28px;
+      color: @colorGray;
+      &.lead {
+        .center;
+        .font-16px-normal;
+        width: 80%;
+        margin-bottom: 28px;
+        color: @colorViolet;
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 479px){
+  .section-story {
+    min-height: 600px;
+    height: auto;
+    background:  @colorYellow url('../images/ourStory-bg-tab.png')no-repeat;
+    background-size: 93px;
+    h1 {
+      .font-23px-caslon;
+      .text-center;
+      margin-top: 79px;
+      margin-bottom: 26px;
+      color: @colorGray;
+    }
+    p{
+      .font-12px-regular;
+      .text-center;
+      .center;
+      width: 90%;
+      line-height: 23px;
+      color: @colorGray;
+      &.lead {
+        .center;
+        .font-12px-regular;
+        width: 80%;
+        margin-bottom: 15px;
+        color: @colorViolet;
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
